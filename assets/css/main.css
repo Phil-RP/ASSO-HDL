@@ -1,3 +1,6 @@
 header {
-  background-color: blue;
+  background-image: url("\assetsimageheader.png");
+}
+header h1 {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
