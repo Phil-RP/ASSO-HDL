@@ -1,24 +1,30 @@
-$bg-header: url(/assets/image/header.jpg)
-
-header
-  display: grid
-  grid-template-columns: 1fr 3fr
+.header
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
   width: 100%
-  height: 15rem
-  background-position: center center
-  background-size: cover
-  background-repeat: no-repeat
-  background-image: $bg-header
+  .container
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
 
-  h1
-    text-align: center
+//rendre l'image de fond responsive
 
-  @media screen and (min-width: 375px )
-    h1
-      margin-right: 25rem
-      padding: 4rem
-      font-size: 3rem
+h1
+  position: absolute
+  color: #3c4e64
+  text-align: center
+  font-size: 1.5rem
+  font-weight: bold
 
-  @media screen and (min-width: 768px )
+  @media (min-width: 375px)
+    font-size: 2rem
+
+  @media screen and (min-width: 768px)
+    font-size: 2.5rem
 
   @media screen and (min-width: 1024px )
+    font-size: 3rem
