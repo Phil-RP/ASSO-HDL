@@ -2,29 +2,71 @@
 @use "../utils/_colors" as colors
 
 %title-1
-  font-family:
-  font-size: 2.5rem
-
-%title-2
-  font-family:
+  font-family: fonts.$baskerville
   font-size: 2rem
 
+%title-2
+  font-family: fonts.$merriweather
+  font-size: 1.75rem
+
 %title-3
-  font-family:
+  font-family: fonts.$merriweather
   font-size: 1.5rem
 
+%title-nav
+  font-family: fonts.$merriweather
+  font-size: 0.75rem
+
 %paragraphe
-  font-family:
-  font-size: 1rem
+  font-family: fonts.$caption
+  font-size: 0.75rem
 
 %text-paleBlue
-  color: $color4
+  color: colors.$color4
 
 %text-lightBlue
-  color: $color3
+  color: colors.$color3
 
 %text-darkBlue
-  color: $color2
+  color: colors.$color2
 
 %text-verydarkblue
-  color: $color1
+  color: colors.$color1
+
+@media  screen and (min-width: 415px)
+  %title-1
+    font-size: 2.5rem
+@media  screen and (min-width: 517px)
+  %title-1
+    font-size: 3rem
+@media  screen and (min-width: 621px)
+  %title-1
+    font-size: 3.5rem
+  %title-2
+    font-size: 2rem
+  %paragraphe
+    font-size: 1rem
+@media  screen and (min-width: 726px)
+  %title-1
+    font-size: 4rem
+@media  screen and (min-width: 829px)
+  %title-1
+    font-size: 4.5rem
+  %title-2
+    font-size: 3rem
+    %paragraphe
+      font-size: 1.25rem
+@media  screen and (min-width: 933px)
+  %title-1
+    font-size: 5rem
+@media  screen and (min-width: 1036px)
+  %title-1
+    font-size: 5.5rem
+  %title-2
+    font-size: 4rem
+@media  screen and (min-width: 1140px)
+  %title-1
+    font-size: 5rem
+@media  screen and (min-width: 1244px)
+  %title-1
+    font-size: 9.5rem

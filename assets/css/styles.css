@@ -13,104 +13,203 @@ ul {
   list-style: none;
 }
 
+.cover .title-1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+
+.title-2 {
+  font-family: "Merriweather", serif;
+  font-size: 1.75rem;
+}
+
+.signIn-inscr_button, .nav a {
+  font-family: "Merriweather", serif;
+  font-size: 0.75rem;
+}
+
+.paragraph {
+  font-family: "PT Serif Caption", serif;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 415px) {
+  .cover .title-1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 517px) {
+  .cover .title-1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 621px) {
+  .cover .title-1 {
+    font-size: 3.5rem;
+  }
+  .title-2 {
+    font-size: 2rem;
+  }
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 726px) {
+  .cover .title-1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 829px) {
+  .cover .title-1 {
+    font-size: 4.5rem;
+  }
+  .title-2 {
+    font-size: 3rem;
+  }
+  .title-2 .paragraph {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 933px) {
+  .cover .title-1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1036px) {
+  .cover .title-1 {
+    font-size: 5.5rem;
+  }
+  .title-2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .cover .title-1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1244px) {
+  .cover .title-1 {
+    font-size: 9.5rem;
+  }
+}
 .flux {
-  background-color: #256D85;
+  background-color: #f0f0f0;
   width: 100%;
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header {
-  margin-top: 3.5rem;
+.cover {
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 6rem;
+  height: 8rem;
 }
-.banner .img {
+.cover .cover-img {
+  position: relative;
   width: 100%;
   height: 100%;
 }
-
-.title-1 {
+.cover .title-1 {
   position: absolute;
-  color: #DFF6FF;
+  color: #f0f0f0;
   text-align: center;
-  font-size: 2rem;
   font-weight: bold;
-  margin: 0;
+  margin-top: 1.5rem;
 }
 
-@media (min-width: 375px) {
-  .title-1 {
-    font-size: 2rem;
-  }
-  .banner {
-    height: 7rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .title-1 {
-    font-size: 3rem;
-  }
-  .banner {
-    height: 8rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .title-1 {
-    font-size: 4rem;
-  }
-  .banner {
+@media screen and (min-width: 325px) {
+  .cover {
+    margin-top: 3.5rem;
     height: 10rem;
   }
 }
+@media screen and (min-width: 415px) {
+  .cover {
+    height: 11rem;
+  }
+}
+@media screen and (min-width: 517px) {
+  .cover {
+    height: 12rem;
+  }
+}
+@media screen and (min-width: 621px) {
+  .cover {
+    height: 13rem;
+  }
+}
+@media screen and (min-width: 726px) {
+  .cover {
+    height: 14rem;
+  }
+}
+@media screen and (min-width: 829px) {
+  .cover {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 933px) {
+  .cover {
+    height: 16rem;
+  }
+}
+@media screen and (min-width: 1036px) {
+  .cover {
+    height: 17rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .cover {
+    height: 18rem;
+  }
+}
+@media screen and (min-width: 1244px) {
+  .cover {
+    height: 25rem;
+  }
+}
 .nav {
-  background-color: #47B5FF;
+  background-color: #6D758C;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.nav-item {
+.nav a {
+  color: #f0f0f0;
+}
+.nav a .nav-item {
   margin-left: 1rem;
 }
 
 body {
-  background-color: #DFF6FF;
-  color: #06283D;
+  color: #1D2240;
 }
 
 .title-2 {
   padding: 1rem 0;
+  margin: 0;
   text-align: center;
 }
 
 .paragraph {
-  padding: 0 3rem;
-  text-align: justify;
+  padding: 0 2rem;
+  text-align: left;
 }
 
 .album {
   margin: 0 1rem 0rem 1rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 4rem;
 }
 
 .banner2 {
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 10rem;
+  height: 15rem;
 }
 .banner2 .img {
   width: 100%;
@@ -118,7 +217,6 @@ body {
 }
 .banner2 .socialink {
   position: absolute;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -128,13 +226,13 @@ body {
   color: #DFF6FF;
 }
 .banner2 .socialink .icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-/* This pen */
 .dark {
-  background: #256D85;
+  background: #6D758C;
 }
 
 a a:hover {
@@ -151,7 +249,7 @@ a a:hover {
   margin: 0 0 2rem 0;
   overflow: hidden;
   position: relative;
-  color: #DFF6FF;
+  color: #f0f0f0;
 }
 .postcard.dark {
   background-color: #18151f;
@@ -260,43 +358,69 @@ a a:hover {
 }
 /* COLORS */
 .postcard .postcard__tagbox .blue.play:hover {
-  background: #0076bd;
+  background: #8D95A6;
 }
 
 .blue .postcard__title:hover {
-  color: #0076bd;
+  color: #8D95A6;
 }
 
 .blue .postcard__bar {
-  background-color: #0076bd;
+  background-color: #8D95A6;
 }
 
 .blue::before {
-  background-image: linear-gradient(-30deg, rgba(71, 181, 255, 0.2745098039), transparent 50%);
+  background-image: linear-gradient(-30deg, #6D758C, transparent 50%);
 }
 
 .blue:nth-child(2n)::before {
-  background-image: linear-gradient(30deg, rgba(71, 181, 255, 0.2745098039), transparent 50%);
+  background-image: linear-gradient(30deg, #6D758C, transparent 50%);
 }
 
 @media screen and (min-width: 769px) {
   .blue::before {
-    background-image: linear-gradient(-80deg, rgba(71, 181, 255, 0.2745098039), transparent 50%);
+    background-image: linear-gradient(-80deg, #6D758C, transparent 50%);
   }
   .blue:nth-child(2n)::before {
-    background-image: linear-gradient(80deg, rgba(71, 181, 255, 0.2745098039), transparent 50%);
+    background-image: linear-gradient(80deg, #6D758C, transparent 50%);
   }
 }
-.btnGoTop {
+.signIn-inscr__list {
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: fixed;
-  right: 0;
-  bottom: 10rem;
+  justify-content: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.signIn-inscr_button {
+  padding: 0.2rem;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   cursor: pointer;
+  background-color: #5768ff;
+  transform: scale(1);
+}
+.signIn-inscr_button:hover {
+  transform: scale(1.1);
+}
+
+.btnGoTop {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  cursor: pointer;
+  transform: scale(1);
+}
+.btnGoTop:hover {
+  transform: scale(1.1);
 }
 
 .btnGoTop_img {
-  width: 2.5rem;
+  width: 2rem;
 }/*# sourceMappingURL=styles.css.map */
