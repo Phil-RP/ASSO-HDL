@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <title>Aides de jeux - Association - Les Hérault de Lambert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@0;1&family=PT+Serif+Caption:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Association - Les Hérault de Lambert</title>
   </head>
   <body>
     <header class="header">
+      <!-- Debut du Menu -->
       <section class="nav fixed-top">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
           <div class="container-fluid">
@@ -19,7 +26,7 @@
                 alt="Logo"
                 width="30px"
                 height="30px"
-                class="d-inline-block align-text-top"
+                class="d-inline-block align-text-center"
               />
               HdL
             </a>
@@ -62,22 +69,35 @@
             </div>
           </div>
         </nav>
-        <div class="d-grid gap-1 d-md-flex justify-content-md-end">
-          <button class="btn btn-primary" type="button">Connexion</button>
+        <div>
+          <ul class="signIn-inscr__list">
+            <li>
+              <a href="/pages-html/signIn.html" class="signIn-inscr_button"
+                >Se connecter</a
+              >
+            </li>
+            <li>
+              <a href="" class="signIn-inscr_button">Inscription</a>
+            </li>
+          </ul>
         </div>
       </section>
-      <div class="banner">
-        <img class="img" src="/assets/image/banner.jpg" alt="" />
+      <!-- Fin du Menu-->
+
+      <!-- Debut du cover -->
+      <section class="cover">
+        <img class="cover-img" src="/assets/image/banner.jpg" alt="" />
         <h1 class="title-1">Les Héraults de Lambert</h1>
-      </div>
+      </section>
+      <!-- fin cover-->
     </header>
     <main class="flux">
       <h2 class="title-2">Aides de jeux</h2>
 
       <!-- debut Card aide de jeux -->
-      <section class="dark">
-        <div class="container py-4">
-          <article class="postcard dark blue">
+      <section class="card">
+        <div>
+          <article class="postcard card blue">
             <a class="postcard__img_link" href="#">
               <img
                 class="postcard__img"
@@ -106,7 +126,7 @@
               </div>
             </div>
           </article>
-          <article class="postcard dark blue">
+          <article class="postcard card blue">
             <a class="postcard__img_link" href="#">
               <img
                 class="postcard__img"
@@ -135,7 +155,7 @@
               </div>
             </div>
           </article>
-          <article class="postcard dark blue">
+          <article class="postcard card blue">
             <a class="postcard__img_link" href="#">
               <img
                 class="postcard__img"
@@ -164,7 +184,12 @@
               </div>
             </div>
           </article>
-          <article class="postcard dark blue">
+        </div>
+      </section>
+      <h2 class="title-2">Scenarios</h2>
+      <section class="card">
+        <div>
+          <article class="postcard card blue">
             <a class="postcard__img_link" href="#">
               <img
                 class="postcard__img"
@@ -193,7 +218,7 @@
               </div>
             </div>
           </article>
-          <article class="postcard dark blue">
+          <article class="postcard card blue">
             <a class="postcard__img_link" href="#">
               <img
                 class="postcard__img"
@@ -225,13 +250,37 @@
         </div>
       </section>
       <!-- fin card aide de jeux -->
+      <!-- debut bouton GoUp-->
+      <div class="btnGoTop">
+        <img src="/assets/image/BtnGoUp.svg" class="btnGoTop_img" />
+      </div>
+      <!-- Fin bouton GoUp-->
     </main>
     <footer>
-      <div class="banner">
+      <div class="banner2">
+        <div class="socialink">
+          <h6>Réseaux sociaux :</h6>
+          <a
+            class="icon"
+            href="https://www.facebook.com/assojdrhdl"
+            target="_blank"
+          >
+            <img src="/assets/image/icon-facebook.svg" alt="icon facebook"
+          /></a>
+          <a
+            class="icon"
+            href="https://discord.com/invite/zXG6eHJ"
+            target="_blank"
+          >
+            <img src="/assets/image/icon-discord.svg" alt="icon discord"
+          /></a>
+        </div>
         <img class="img" src="/assets/image/banner.jpg" alt="" />
       </div>
     </footer>
-    <script src="../vendor/bootstrap.bundle.min.js"></script>
-    <script src="../vendor/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="/vendor/bootstrap.min.css"></script>
+    <script src="/vendor/bootstrap.min.js"></script>
+    <script src="/vendor/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,7 +1,11 @@
 @use "../utils/_utils" as utils
 
-.dark
-  background: utils.$color2
+.title-2
+  text-align: center
+  @extend %title-2
+
+.card
+  background-color: utils.$color1
 
 a a:hover
   text-decoration: none
@@ -13,13 +17,13 @@ a a:hover
   display: flex
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66)
   border-radius: 10px
-  margin: 0 0 2rem 0
+  margin: 2rem 2rem 2rem 2rem
   overflow: hidden
   position: relative
   color: utils.$color4
 
-  &.dark
-    background-color: #18151f
+  &.card
+    background-color: utils.$color1
 
   a
     color: inherit
@@ -86,15 +90,6 @@ a a:hover
       padding: 2rem
       width: 100%
 
-    .media.postcard__text:before
-      content: ""
-      position: absolute
-      display: block
-      background: #18151f
-      top: -20%
-      height: 130%
-      width: 55px
-
     &:hover .postcard__img
       transform: scale(1.1)
 
@@ -104,40 +99,19 @@ a a:hover
     &:nth-child(2n+0)
       flex-direction: row-reverse
 
-    &:nth-child(2n+1) .postcard__text::before
-      left: -12px !important
-      transform: rotate(4deg)
-
-    &:nth-child(2n+0) .postcard__text::before
-      right: -12px !important
-      transform: rotate(-4deg)
-
 @media screen and (min-width: 1024px)
   .postcard__text
     padding: 3rem 3rem
-  .postcard.dark
-    .postcard__text:before
-      background: #18151f
-
-/* COLORS */
-.postcard .postcard__tagbox .blue.play:hover
-  background: utils.$color3
 
 .blue .postcard__title:hover
-  color: utils.$color3
+  color: utils.$color2
 
 .blue .postcard__bar
-  background-color: utils.$color3
-
-.blue::before
-  background-image: linear-gradient(-30deg, utils.$color2, transparent 50%)
-
-.blue:nth-child(2n)::before
-  background-image: linear-gradient(30deg, utils.$color2, transparent 50%)
+  background-color: utils.$color2
 
 @media screen and (min-width: 769px)
   .blue::before
-    background-image: linear-gradient(-80deg, utils.$color2, transparent 50%)
+    background-image: linear-gradient(-80deg, utils.$color2, transparent 40%)
 
   .blue:nth-child(2n)::before
-    background-image: linear-gradient(80deg, utils.$color2, transparent 50%)
+    background-image: linear-gradient(80deg, utils.$color2, transparent 40%)

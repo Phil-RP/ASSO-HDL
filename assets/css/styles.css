@@ -13,12 +13,12 @@ ul {
   list-style: none;
 }
 
-.cover .title-1 {
+.cover .title-1, .accueil .accueiltitle-1 {
   font-family: "Libre Baskerville", serif;
   font-size: 2rem;
 }
 
-.title-2 {
+.title-2, .accueiltitle-2 {
   font-family: "Merriweather", serif;
   font-size: 1.75rem;
 }
@@ -28,69 +28,58 @@ ul {
   font-size: 0.75rem;
 }
 
-.paragraph {
-  font-family: "PT Serif Caption", serif;
-  font-size: 0.75rem;
-}
-
 @media screen and (min-width: 415px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 517px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 621px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 3.5rem;
   }
-  .title-2 {
+  .title-2, .accueiltitle-2 {
     font-size: 2rem;
-  }
-  .paragraph {
-    font-size: 1rem;
   }
 }
 @media screen and (min-width: 726px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 829px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 4.5rem;
   }
-  .title-2 {
+  .title-2, .accueiltitle-2 {
     font-size: 3rem;
-  }
-  .title-2 .paragraph {
-    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 933px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 1036px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 5.5rem;
   }
-  .title-2 {
+  .title-2, .accueiltitle-2 {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 1140px) {
-  .cover .title-1 {
+  .cover .title-1, .accueil .accueiltitle-1 {
     font-size: 5rem;
   }
 }
 @media screen and (min-width: 1244px) {
-  .cover .title-1 {
-    font-size: 9.5rem;
+  .cover .title-1, .accueil .accueiltitle-1 {
+    font-size: 9rem;
   }
 }
 .flux {
@@ -101,6 +90,94 @@ ul {
   margin-right: auto;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.accueil {
+  background-image: url(/assets/image/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.accueil .accueiltitle-1 {
+  padding-top: 5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.accueiltitle-2 {
+  padding-left: 2rem;
+  margin-bottom: 1.5;
+  text-align: start;
+  color: #f0f0f0;
+}
+
+.paragraph {
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+}
+
+.album {
+  margin: 0 0.5rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (min-width: 325px) {
+  .album {
+    margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 415px) {
+  .album {
+    margin: 0 3rem;
+  }
+}
+@media screen and (min-width: 517px) {
+  .album {
+    margin: 0 4rem;
+  }
+}
+@media screen and (min-width: 621px) {
+  .album {
+    margin: 0 5rem;
+  }
+}
+@media screen and (min-width: 726px) {
+  .album {
+    margin: 0 6rem;
+  }
+}
+@media screen and (min-width: 829px) {
+  .album {
+    margin: 0 7rem;
+  }
+}
+@media screen and (min-width: 933px) {
+  .album {
+    margin: 0 8rem;
+  }
+}
+@media screen and (min-width: 1036px) {
+  .album {
+    margin: 0 9rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .album {
+    margin: 0 10rem;
+  }
+}
+@media screen and (min-width: 1244px) {
+  .album {
+    margin: 0 12rem;
+  }
+}
 .cover {
   margin-top: 5rem;
   display: flex;
@@ -185,26 +262,6 @@ ul {
   margin-left: 1rem;
 }
 
-body {
-  color: #1D2240;
-}
-
-.title-2 {
-  padding: 1rem 0;
-  margin: 0;
-  text-align: center;
-}
-
-.paragraph {
-  padding: 0 2rem;
-  text-align: left;
-}
-
-.album {
-  margin: 0 1rem 0rem 1rem;
-  padding-bottom: 4rem;
-}
-
 .banner2 {
   display: flex;
   align-items: center;
@@ -231,8 +288,12 @@ body {
   height: 100%;
 }
 
-.dark {
-  background: #6D758C;
+.title-2 {
+  text-align: center;
+}
+
+.card {
+  background-color: #1D2240;
 }
 
 a a:hover {
@@ -246,13 +307,13 @@ a a:hover {
   display: flex;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   border-radius: 10px;
-  margin: 0 0 2rem 0;
+  margin: 2rem 2rem 2rem 2rem;
   overflow: hidden;
   position: relative;
   color: #f0f0f0;
 }
-.postcard.dark {
-  background-color: #18151f;
+.postcard.card {
+  background-color: #1D2240;
 }
 .postcard a {
   color: inherit;
@@ -321,15 +382,6 @@ a a:hover {
     padding: 2rem;
     width: 100%;
   }
-  .postcard .media.postcard__text:before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: #18151f;
-    top: -20%;
-    height: 130%;
-    width: 55px;
-  }
   .postcard:hover .postcard__img {
     transform: scale(1.1);
   }
@@ -339,50 +391,120 @@ a a:hover {
   .postcard:nth-child(2n+0) {
     flex-direction: row-reverse;
   }
-  .postcard:nth-child(2n+1) .postcard__text::before {
-    left: -12px !important;
-    transform: rotate(4deg);
-  }
-  .postcard:nth-child(2n+0) .postcard__text::before {
-    right: -12px !important;
-    transform: rotate(-4deg);
-  }
 }
 @media screen and (min-width: 1024px) {
   .postcard__text {
     padding: 3rem 3rem;
   }
-  .postcard.dark .postcard__text:before {
-    background: #18151f;
-  }
 }
-/* COLORS */
-.postcard .postcard__tagbox .blue.play:hover {
-  background: #8D95A6;
-}
-
 .blue .postcard__title:hover {
-  color: #8D95A6;
+  color: #6D758C;
 }
 
 .blue .postcard__bar {
-  background-color: #8D95A6;
-}
-
-.blue::before {
-  background-image: linear-gradient(-30deg, #6D758C, transparent 50%);
-}
-
-.blue:nth-child(2n)::before {
-  background-image: linear-gradient(30deg, #6D758C, transparent 50%);
+  background-color: #6D758C;
 }
 
 @media screen and (min-width: 769px) {
   .blue::before {
-    background-image: linear-gradient(-80deg, #6D758C, transparent 50%);
+    background-image: linear-gradient(-80deg, #6D758C, transparent 40%);
   }
   .blue:nth-child(2n)::before {
-    background-image: linear-gradient(80deg, #6D758C, transparent 50%);
+    background-image: linear-gradient(80deg, #6D758C, transparent 40%);
+  }
+}
+.container {
+  background-image: url(/assets/image/banner.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.container_signInForm {
+  background: rgba(141, 149, 166, 0.3);
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.container_signInForm img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 2.5rem 0 1rem 0;
+}
+.container_signInForm h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sigInForm_information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sigInForm_information .sigInForm_information_label {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  text-align: start;
+  margin: 0 3rem 0 3rem;
+}
+.sigInForm_information .sigInForm_information_input {
+  margin: 0 3rem 1rem 3rem;
+  height: 2rem;
+}
+
+.aide {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+.aide a {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  transform: scale(1);
+}
+.aide a:hover {
+  transform: scale(1.1);
+  color: #f0f0f0;
+}
+.aide button {
+  margin-bottom: 1.5rem;
+}
+
+.submit {
+  margin-bottom: 3rem;
+}
+.submit button {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "PT Serif Caption", serif;
+  font-size: 1rem;
+  background-color: #5768ff;
+}
+.submit button:hover {
+  transform: scale(1.1);
+}
+.submit .signUp:hover {
+  color: #f0f0f0;
+}
+
+@media screen and (min-width: 320px) {
+  .container_signInForm {
+    width: 25rem;
   }
 }
 .signIn-inscr__list {

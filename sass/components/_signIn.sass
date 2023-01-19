@@ -1,0 +1,80 @@
+@use '../utils/_fonts' as fonts
+@use '../utils/_colors' as colors
+
+.container
+  background-image: url(/assets/image/banner.jpg)
+  width: 100%
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+
+.container_signInForm
+  background: rgba(141, 149, 166, 0.30)
+  width: 100%
+  height: auto
+  border-radius: 20px
+  border-left: 3px solid rgba(141, 149, 166, 0.30)
+  border-top: 3px solid rgba(141, 149, 166, 0.30)
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+  text-align: center
+  img
+    width: 8rem
+    height: 8rem
+    border-radius: 50%
+    margin: 2.5rem 0 1rem 0
+  h1
+    font-family: fonts.$baskerville
+    font-size: 2rem
+    margin-bottom: 1rem
+
+.sigInForm_information
+  display: flex
+  justify-content: center
+  flex-direction: column
+  .sigInForm_information_label
+    font-family: fonts.$merriweather
+    font-size: 1rem
+    text-align: start
+    margin: 0 3rem 0 3rem
+  .sigInForm_information_input
+    margin: 0 3rem 1rem 3rem
+    height: 2rem
+
+.aide
+  display: flex
+  justify-content: space-evenly
+  margin-bottom: 1.5rem
+  a
+    text-align: center
+    font-family: fonts.$merriweather
+    transform: scale(1)
+    &:hover
+      transform: scale(1.1)
+      color: colors.$color4
+  button
+    margin-bottom: 1.5rem
+
+.submit
+  margin-bottom: 3rem
+  button
+    padding: 0.5rem
+    margin-bottom: 1.5rem
+    border: none
+    border-radius: 20px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    cursor: pointer
+    font-family: fonts.$caption
+    font-size: 1rem
+    background-color: #5768ff
+    &:hover
+      transform: scale(1.1)
+  .signUp:hover
+    color: colors.$color4
+
+@media  screen and (min-width: 320px)
+  .container_signInForm
+    width: 25rem
