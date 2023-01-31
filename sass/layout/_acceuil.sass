@@ -1,70 +1,55 @@
 @use "../utils/_utils" as utils
-body
-  width: 100%
-  height: 100vh
 
 .accueil
-  background-image: url(/assets/image/banner.jpg)
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
   width: 100%
+  height: 100%
   display: flex
   flex-direction: column
   .accueiltitle-1
-    padding-top: 5rem
+    padding-top: 5.5rem
     margin-bottom: 1.5rem
     text-align: center
     @extend %title-1
+    text-shadow: 10px 10px 10px #000000
     color: utils.$color4
 
 .accueiltitle-2
-  padding-left: 2rem
+  padding-left: 0.5rem
   margin-bottom: 1.5
   text-align: start
+  text-decoration: underline
   @extend %title-2
   color: utils.$color4
 
-.paragraph
+.accueil-paragraph
   margin-bottom: 1.5rem
-  padding: 0 2rem
+  padding: 0 1rem
 
 .album
-  margin: 0 0.5rem
-  padding-bottom: 10rem
+  padding: 0 0.5rem
+  margin-bottom: 15rem
 
-@media  screen and (min-width: 325px)
+@media  screen and (min-width: 324px)
   .album
-    margin: 0 2rem
-@media  screen and (min-width: 415px)
+    padding: 0 2rem
+  //.paragraph
+  //  padding: 0 3rem
+@media  screen and (min-width: 481px)
   .album
-    margin: 0 3rem
-@media  screen and (min-width: 517px)
+    padding: 0 4rem
+  //.paragraph
+  //  padding: 0 4rem
+@media  screen and (min-width: 769px)
   .album
-    margin: 0 4rem
-@media  screen and (min-width: 621px)
+    padding: 0 6rem
+  //.paragraph
+  //  padding: 0 5rem
+@media  screen and (min-width: 1024px)
   .album
-    margin: 0 5rem
-@media  screen and (min-width: 726px)
+    padding: 0 8rem
+  //.paragraph
+  //  padding: 0 6rem
+
+@media  screen and (min-width: 1201px)
   .album
-    margin: 0 6rem
-@media  screen and (min-width: 829px)
-  .album
-    margin: 0 7rem
-@media  screen and (min-width: 933px)
-  .album
-    margin: 0 8rem
-@media  screen and (min-width: 1036px)
-  .album
-    margin: 0 9rem
-@media  screen and (min-width: 1140px)
-  .album
-    margin: 0 10rem
-@media  screen and (min-width: 1244px)
-  .album
-    margin: 0 12rem
-//@media  screen and (min-width: 324px)
-//@media  screen and (min-width: 481px)
-//@media  screen and (min-width: 769px)
-//@media  screen and (min-width: 1024PX)
-//@media  screen and (min-width: 1201px)
+    padding: 0 10rem

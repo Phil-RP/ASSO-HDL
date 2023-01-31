@@ -1,4 +1,4 @@
-* {
+*, body, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,240 +13,473 @@ ul {
   list-style: none;
 }
 
-.cover .title-1, .accueil .accueiltitle-1 {
+.cover .coverTitle-1, .accueil .accueiltitle-1 {
   font-family: "Libre Baskerville", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-.title-2, .accueiltitle-2 {
+.gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
   font-family: "Merriweather", serif;
   font-size: 1.75rem;
 }
 
-.signIn-inscr_button, .nav a {
+.event-tittle {
   font-family: "Merriweather", serif;
-  font-size: 0.75rem;
+  font-size: 1.1rem;
 }
 
-@media screen and (min-width: 415px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 2.5rem;
+.signIn-inscr_button, .nav a {
+  font-family: "Merriweather", serif;
+  font-size: 0.8rem;
+}
+
+.eventHero_text_paragraph {
+  font-family: "PT Serif Caption", serif;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 324px) {
+  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+    font-size: 2.75rem;
+  }
+  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+    font-size: 2rem;
+  }
+  .event-tittle {
+    font-size: 1.25rem;
   }
 }
-@media screen and (min-width: 517px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
+@media screen and (min-width: 481px) {
+  .cover .coverTitle-1, .accueil .accueiltitle-1 {
     font-size: 3rem;
   }
+  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+    font-size: 2.25rem;
+  }
+  .event-tittle {
+    font-size: 1.5rem;
+  }
+  .eventHero_text_paragraph {
+    font-size: 1rem;
+  }
 }
-@media screen and (min-width: 621px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
+@media screen and (min-width: 622px) {
+  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+    font-size: 3.25rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .cover .coverTitle-1, .accueil .accueiltitle-1 {
     font-size: 3.5rem;
   }
-  .title-2, .accueiltitle-2 {
+  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+    font-size: 2.5rem;
+  }
+  .event-tittle {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+    font-size: 4.5rem;
+  }
+  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+    font-size: 2.75rem;
+  }
+  .event-tittle {
+    font-size: 1.5rem;
+  }
+  .eventHero_text_paragraph {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+    font-size: 5.75rem;
+  }
+  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+    font-size: 3rem;
+  }
+  .event-tittle {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 726px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 4rem;
-  }
+body {
+  background-image: url(/assets/image/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
-@media screen and (min-width: 829px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 4.5rem;
-  }
-  .title-2, .accueiltitle-2 {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 933px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 5rem;
-  }
-}
-@media screen and (min-width: 1036px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 5.5rem;
-  }
-  .title-2, .accueiltitle-2 {
-    font-size: 4rem;
-  }
-}
-@media screen and (min-width: 1140px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 5rem;
-  }
-}
-@media screen and (min-width: 1244px) {
-  .cover .title-1, .accueil .accueiltitle-1 {
-    font-size: 9rem;
-  }
-}
+
 .flux {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0);
   width: 100%;
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-}
-
 .accueil {
-  background-image: url(/assets/image/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 .accueil .accueiltitle-1 {
-  padding-top: 5rem;
+  padding-top: 5.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  text-shadow: 10px 10px 10px #000000;
   color: #f0f0f0;
 }
 
 .accueiltitle-2 {
-  padding-left: 2rem;
+  padding-left: 0.5rem;
   margin-bottom: 1.5;
   text-align: start;
+  text-decoration: underline;
   color: #f0f0f0;
 }
 
-.paragraph {
+.accueil-paragraph {
   margin-bottom: 1.5rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .album {
-  margin: 0 0.5rem;
-  padding-bottom: 10rem;
+  padding: 0 0.5rem;
+  margin-bottom: 15rem;
 }
 
-@media screen and (min-width: 325px) {
+@media screen and (min-width: 324px) {
   .album {
-    margin: 0 2rem;
+    padding: 0 2rem;
   }
 }
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 481px) {
   .album {
-    margin: 0 3rem;
+    padding: 0 4rem;
   }
 }
-@media screen and (min-width: 517px) {
+@media screen and (min-width: 769px) {
   .album {
-    margin: 0 4rem;
+    padding: 0 6rem;
   }
 }
-@media screen and (min-width: 621px) {
+@media screen and (min-width: 1024px) {
   .album {
-    margin: 0 5rem;
+    padding: 0 8rem;
   }
 }
-@media screen and (min-width: 726px) {
+@media screen and (min-width: 1201px) {
   .album {
-    margin: 0 6rem;
+    padding: 0 10rem;
   }
 }
-@media screen and (min-width: 829px) {
-  .album {
-    margin: 0 7rem;
-  }
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media screen and (min-width: 933px) {
-  .album {
-    margin: 0 8rem;
-  }
+
+.container_signInForm {
+  background: rgba(141, 149, 166, 0.3);
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
-@media screen and (min-width: 1036px) {
-  .album {
-    margin: 0 9rem;
-  }
+.container_signInForm img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 2.5rem 0 1rem 0;
 }
-@media screen and (min-width: 1140px) {
-  .album {
-    margin: 0 10rem;
-  }
+.container_signInForm h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
-@media screen and (min-width: 1244px) {
-  .album {
-    margin: 0 12rem;
-  }
-}
-.cover {
-  margin-top: 5rem;
+
+.sigInForm_information {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 8rem;
+  flex-direction: column;
 }
-.cover .cover-img {
-  position: relative;
+.sigInForm_information .sigInForm_information_label {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  text-align: start;
+  margin: 0 3rem 0 3rem;
+}
+.sigInForm_information .sigInForm_information_input {
+  margin: 0 3rem 1rem 3rem;
+  height: 2rem;
+}
+
+.aide {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+.aide .aide-item {
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  transform: scale(1);
+}
+.aide .aide-item:hover {
+  transform: scale(1.1);
+  color: #f0f0f0;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "PT Serif Caption", serif;
+  font-size: 1rem;
+  background-color: #5768ff;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.signUp:hover {
+  color: #f0f0f0;
+}
+
+.inscription {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .container_signInForm {
+    max-width: 30rem;
+  }
+}
+.containerSignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
-.cover .title-1 {
-  position: absolute;
+
+.formSignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background: rgba(141, 149, 166, 0.3);
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+}
+
+.formSignUp_img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+.formSignUp_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding: 1rem;
+}
+
+.ActuTitle-2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #f0f0f0;
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(141, 149, 166, 0.3);
+  border-radius: 20px;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+}
+
+.event-tittle {
+  text-decoration: underline;
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+  color: #f0f0f0;
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.eventHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.eventHero_img {
+  margin-bottom: 1.5rem;
+}
+
+.eventHero_img-flyer {
+  width: 18.75rem;
+}
+
+.eventHero_text {
+  width: 100%;
+}
+
+.eventHero_text_paragraph {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #f0f0f0;
+}
+
+.eventNav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+.eventNav .eventNav-item {
+  background-color: #1D2240;
+  color: #f0f0f0;
+  text-align: center;
+  width: 9.5rem;
+  height: 1.5rem;
+  border-radius: 10px;
+}
+.eventNav .eventNav-item:hover {
+  color: #1D2240;
+  background-color: #989eaa;
+}
+
+.eventGuest {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventGuest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  margin-bottom: 1.5rem;
+  background: rgba(141, 149, 166, 0.4);
+  border-radius: 1rem;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+}
+
+.eventGuest-item_img {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 481px) {
+  .eventHero_img-flyer {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 622px) {
+  .eventGuest-item {
+    display: flex;
+    flex-direction: row;
+    width: 35rem;
+  }
+  .eventHero_img-flyer {
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .eventGuest-item {
+    display: flex;
+    flex-direction: row;
+    width: 45rem;
+  }
+  .eventHero_img-flyer {
+    width: 45rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .eventGuest-item {
+    display: flex;
+    flex-direction: row;
+    width: 55rem;
+  }
+  .eventHero_img-flyer {
+    width: 55rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .eventGuest-item {
+    display: flex;
+    flex-direction: row;
+    width: 65rem;
+  }
+  .eventHero_img-flyer {
+    width: 65rem;
+  }
+}
+.cover {
+  padding-top: 4rem;
+}
+.cover .coverTitle-1 {
   color: #f0f0f0;
   text-align: center;
   font-weight: bold;
-  margin-top: 1.5rem;
+  padding: 2rem 0 1rem 0;
+  text-shadow: 10px 10px 10px #000000;
 }
 
-@media screen and (min-width: 325px) {
+@media screen and (min-width: 324px) {
   .cover {
-    margin-top: 3.5rem;
-    height: 10rem;
-  }
-}
-@media screen and (min-width: 415px) {
-  .cover {
-    height: 11rem;
-  }
-}
-@media screen and (min-width: 517px) {
-  .cover {
+    padding-top: 2.5rem;
     height: 12rem;
   }
 }
-@media screen and (min-width: 621px) {
+@media screen and (min-width: 481px) {
   .cover {
     height: 13rem;
   }
 }
-@media screen and (min-width: 726px) {
+@media screen and (min-width: 769px) {
   .cover {
     height: 14rem;
   }
 }
-@media screen and (min-width: 829px) {
+@media screen and (min-width: 1024px) {
   .cover {
     height: 15rem;
   }
 }
-@media screen and (min-width: 933px) {
+@media screen and (min-width: 1201px) {
   .cover {
     height: 16rem;
-  }
-}
-@media screen and (min-width: 1036px) {
-  .cover {
-    height: 17rem;
-  }
-}
-@media screen and (min-width: 1140px) {
-  .cover {
-    height: 18rem;
-  }
-}
-@media screen and (min-width: 1244px) {
-  .cover {
-    height: 25rem;
   }
 }
 .nav {
@@ -262,38 +495,27 @@ body {
   margin-left: 1rem;
 }
 
-.banner2 {
+.socialNetworks {
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 15rem;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  margin-bottom: 1.5rem;
+  margin-right: 2rem;
 }
-.banner2 .img {
-  width: 100%;
-  height: 100%;
-}
-.banner2 .socialink {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-.banner2 .socialink h6 {
+.socialNetworks h6 {
   font-size: 0.7rem;
   color: #DFF6FF;
 }
-.banner2 .socialink .icon {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 
-.title-2 {
+.gameHelptitle-2 {
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 .card {
-  background-color: #1D2240;
+  background-color: #6D758C;
 }
 
 a a:hover {
@@ -413,108 +635,14 @@ a a:hover {
     background-image: linear-gradient(80deg, #6D758C, transparent 40%);
   }
 }
-.container {
-  background-image: url(/assets/image/banner.jpg);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-}
-
-.container_signInForm {
-  background: rgba(141, 149, 166, 0.3);
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  border-left: 3px solid rgba(141, 149, 166, 0.3);
-  border-top: 3px solid rgba(141, 149, 166, 0.3);
-  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-.container_signInForm img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  margin: 2.5rem 0 1rem 0;
-}
-.container_signInForm h1 {
-  font-family: "Libre Baskerville", serif;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.sigInForm_information {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.sigInForm_information .sigInForm_information_label {
-  font-family: "Merriweather", serif;
-  font-size: 1rem;
-  text-align: start;
-  margin: 0 3rem 0 3rem;
-}
-.sigInForm_information .sigInForm_information_input {
-  margin: 0 3rem 1rem 3rem;
-  height: 2rem;
-}
-
-.aide {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 1.5rem;
-}
-.aide a {
-  text-align: center;
-  font-family: "Merriweather", serif;
-  transform: scale(1);
-}
-.aide a:hover {
-  transform: scale(1.1);
-  color: #f0f0f0;
-}
-.aide button {
-  margin-bottom: 1.5rem;
-}
-
-.submit {
-  margin-bottom: 3rem;
-}
-.submit button {
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-  border: none;
-  border-radius: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-family: "PT Serif Caption", serif;
-  font-size: 1rem;
-  background-color: #5768ff;
-}
-.submit button:hover {
-  transform: scale(1.1);
-}
-.submit .signUp:hover {
-  color: #f0f0f0;
-}
-
-@media screen and (min-width: 320px) {
-  .container_signInForm {
-    width: 25rem;
-  }
-}
 .signIn-inscr__list {
   display: flex;
   align-items: center;
   justify-content: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-  margin: 0;
   padding: 0;
+  margin-bottom: 0.5rem;
 }
 
 .signIn-inscr_button {
@@ -532,17 +660,22 @@ a a:hover {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 325px) {
+  .signIn-inscr__list {
+    margin-bottom: 0;
+  }
+}
 .btnGoTop {
   position: fixed;
-  right: 0.5rem;
-  bottom: 0.5rem;
+  right: 1rem;
+  bottom: 1rem;
   cursor: pointer;
   transform: scale(1);
 }
 .btnGoTop:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .btnGoTop_img {
-  width: 2rem;
+  width: 2.5rem;
 }/*# sourceMappingURL=styles.css.map */

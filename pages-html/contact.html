@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@0;1&family=PT+Serif+Caption:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <title>Association - Les Hérault de Lambert</title>
+    <title> Association - Les Hérault de Lambert - Contact </title>
   </head>
   <body>
     <header class="header">
-      <!-- Debut du Menu -->
+
+      <!-- Debut de la Navbar -->
       <section class="nav fixed-top">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
           <div class="container-fluid">
@@ -26,7 +21,7 @@
                 alt="Logo"
                 width="30px"
                 height="30px"
-                class="d-inline-block align-text-center"
+                class="d-inline-block align-text-top"
               />
               HdL
             </a>
@@ -49,8 +44,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages-html/actualites.html"
-                    >Actualités/Evenements</a
+                  <a class="nav-link" href="/pages-html/evenements.html"
+                    >Evenements</a
                   >
                 </li>
                 <li class="nav-item">
@@ -61,8 +56,8 @@
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    href="/pages-html/contact-inscription.html"
-                    >Contact/Inscription</a
+                    href="/pages-html/contact.html"
+                    >Contact</a
                   >
                 </li>
               </ul>
@@ -84,48 +79,69 @@
           </ul>
         </div>
       </section>
-      <!-- Fin du Menu-->
-
-      <!-- Debut du cover -->
-      <section class="cover">
-        <img class="cover-img" src="/assets/image/banner.jpg" alt="" />
+      <!-- Fin de la Navbar -->
+      
+      <!-- Debut de la banniére Top -->
+      <div class="banner">
         <h1 class="title-1">Les Héraults de Lambert</h1>
-      </section>
-      <!-- fin cover-->
+      </div>
+      <!-- Fin de la banniére Top-->
+
     </header>
     <main class="flux">
-      <h2 class="title-2">Actualités/Evenements</h2>
-      <!-- debut bouton GoUp-->
-      <div class="btnGoTop">
-        <img src="/assets/image/BtnGoUp.svg" class="btnGoTop_img" />
+      <h2 class="title-2">Contacts</h2>
+      <Section class="contact">
+        <div class="map row">
+          <div class="col">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2530.239556074151!2d3.0225167!3d50.641242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32aa068a97a39%3A0xfa37ebbd3213fd68!2sCentre%20Jules%20Maillot!5e0!3m2!1sfr!2sfr!4v1673616030500!5m2!1sfr!2sfr"
+              width= 100%
+              height= 300px
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="carte d'accés Google Maps"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="info row">
+          <div class="adress col">
+            <h3>Où nous trouver:</h3>
+            <p>
+              Centre Jules Maillot<br/>
+              Rue champêtre<br/>
+              59130 Lambersart<br/>
+              E-mail: heraultsdelambert@gmail.com 
+            </p>
+          </div>
+          
+          <div class="social col">
+            <h4>Réseaux sociaux :</h4>
+            <div class="row">
+              <div class="icon col">
+                <a class="icon" href="https://www.facebook.com/assojdrhdl" target="_blank">
+                <img src="/assets/image/icon-facebook.svg" alt="icon facebook"/></a>
+              </div>
+              <div class="icon col">
+                <a class="icon" href="https://discord.com/invite/zXG6eHJ" target="_blank">
+                <img src="/assets/image/icon-discord.svg" alt="icon discord"/></a>
+              </div>
+            </div>
+              
+          </div>
+        </div>        
+      </Section>
+      <h2 class="title-2">Inscription</h2>
+        
       </div>
-      <!-- Fin bouton GoUp-->
     </main>
     <footer>
-      <div class="banner2">
-        <div class="socialink">
-          <h6>Réseaux sociaux :</h6>
-          <a
-            class="icon"
-            href="https://www.facebook.com/assojdrhdl"
-            target="_blank"
-          >
-            <img src="/assets/image/icon-facebook.svg" alt="icon facebook"
-          /></a>
-          <a
-            class="icon"
-            href="https://discord.com/invite/zXG6eHJ"
-            target="_blank"
-          >
-            <img src="/assets/image/icon-discord.svg" alt="icon discord"
-          /></a>
-        </div>
-        <img class="img" src="/assets/image/banner.jpg" alt="" />
+      <div class="banner">
       </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="/vendor/bootstrap.min.css"></script>
-    <script src="/vendor/bootstrap.min.js"></script>
-    <script src="/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
   </body>
 </html>

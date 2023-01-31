@@ -1,0 +1,122 @@
+@use "../utils/_utils" as utils
+
+.ActuTitle-2
+  text-align: center
+  padding-bottom: 1.5rem
+  @extend %title-2
+  color: utils.$color4
+  text-shadow: 10px 10px 10px #000000
+
+.event
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: rgba(141, 149, 166, 0.30)
+  border-radius: 20px
+  border-left: 3px solid rgba(141, 149, 166, 0.30)
+  border-top: 3px solid rgba(141, 149, 166, 0.30)
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+
+.event-tittle
+  text-decoration: underline
+  text-align: center
+  padding: 1rem 0 1.5rem 0
+  @extend %title-3
+  color: utils.$color4
+  text-shadow: 10px 10px 10px #000000
+
+.eventHero
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+.eventHero_img
+  margin-bottom: 1.5rem
+.eventHero_img-flyer
+  width: 18.75rem
+
+.eventHero_text
+  width: 100%
+.eventHero_text_paragraph
+  padding: 0 1.5rem
+  margin-bottom: 1.5rem
+  @extend %paragraphe
+  color: utils.$color4
+
+.eventNav
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  gap: 0.5rem
+  justify-content: space-evenly
+  margin-bottom: 1.5rem
+  .eventNav-item
+    background-color: utils.$color1
+    color: utils.$color4
+    text-align: center
+    width: 9.5rem
+    height: 1.5rem
+    border-radius: 10px
+    &:hover
+      color: utils.$color1
+      background-color: utils.$color3
+
+.eventGuest
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+.eventGuest-item
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 20rem
+  margin-bottom: 1.5rem
+  background: rgba(141, 149, 166, 0.40)
+  border-radius: 1rem
+  border-left: 3px solid rgba(141, 149, 166, 0.30)
+  border-top: 3px solid rgba(141, 149, 166, 0.30)
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+
+.eventGuest-item_img
+  margin: 1rem
+
+//@media  screen and (min-width: 324px)
+
+@media  screen and (min-width: 481px)
+  .eventHero_img-flyer
+    width: 25rem
+
+@media  screen and (min-width: 622px)
+  .eventGuest-item
+    display: flex
+    flex-direction: row
+    width: 35rem
+  .eventHero_img-flyer
+    width: 35rem
+
+@media  screen and (min-width: 769px)
+  .eventGuest-item
+    display: flex
+    flex-direction: row
+    width: 45rem
+  .eventHero_img-flyer
+    width: 45rem
+
+@media  screen and (min-width: 1024px)
+  .eventGuest-item
+    display: flex
+    flex-direction: row
+    width: 55rem
+  .eventHero_img-flyer
+    width: 55rem
+
+@media  screen and (min-width: 1201px)
+  .eventGuest-item
+    display: flex
+    flex-direction: row
+    width: 65rem
+  .eventHero_img-flyer
+    width: 65rem

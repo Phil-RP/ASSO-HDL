@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@0;1&family=PT+Serif+Caption:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <title>Association - Les Hérault de Lambert</title>
+    <title>Association - Les Hérault de Lambert - Acceuil</title>
   </head>
   <body>
     <header class="header">
@@ -42,15 +42,15 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <ul class="navbar-nav me-auto mb-1 mb-md-0">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="index.html"
                     >Acceuil</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages-html/actualites.html"
-                    >Actualités/Evenements</a
+                  <a class="nav-link" href="/pages-html/evenements.html"
+                    >Evenements</a
                   >
                 </li>
                 <li class="nav-item">
@@ -59,10 +59,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="/pages-html/contact-inscription.html"
-                    >Contact/Inscription</a
+                  <a class="nav-link" href="/pages-html/contact.html"
+                    >Contact</a
                   >
                 </li>
               </ul>
@@ -77,44 +75,45 @@
               >
             </li>
             <li>
-              <a href="" class="signIn-inscr_button">Inscription</a>
+              <a href="/pages-html/signUp.html" class="signIn-inscr_button"
+                >Inscription</a
+              >
             </li>
           </ul>
         </div>
       </section>
       <!-- Fin du Menu-->
     </header>
+    <!-- Debut acceuil -->
     <main class="accueil">
       <h1 class="accueiltitle-1">Les Héraults de Lambert</h1>
-      <div class="About">
+      <div class="about">
         <h2 class="accueiltitle-2">Qui somme nous ?</h2>
-        <p class="paragraph">
+        <p class="accueil-paragraph">
           « Les Héraults de Lambert » est une association de jeu de rôle et de
           jeux de plateau créé en 1990 par un groupe de copains, en recherche
           d'un espace où pouvoir rencontrer d'autres joueurs et où pouvoir jouer
-          régulièrement. Merci à la mairie de Lambersart de nous avoir soutenu
+          régulièrement.
+          <br />
+          Le club a traversé les âges, Il est devenu transgénérationnel.
+          Certains des membres du début sont toujours là, et les enfants ont
+          toujours été les bienvenus. Tous les univers de jeu sont présents.
           !<br />
-          Le club a traversé les âges, des périodes sombres où le jdr avait
-          mauvaise presse, à aujourd'hui, où il est reconnu plus que jamais, et
-          où les jeux dits « experts » se sont démocratisés. Merci à la période
-          Covid !<br />
-          Il est aussi devenu transgénérationnel. Certains des membres du début
-          sont toujours là, et les enfants ont toujours été les bienvenus. Tous
-          les univers de jeu sont présents. Certains sont des constructions
-          personnelles dont nous sommes fiers !<br />
           Nous avons toujours eu l'envie de propager notre passion ludique et
           gardé une grande tradition d’accueil et d’intégration dans nos
-          parties.<br />
-          Bienvenue chez nous !
+          parties.
+          <br />
+          <span>Bienvenue chez nous !</span>
         </p>
       </div>
+      <!-- Fin acceuil -->
       <!-- Debut du carousel -->
       <section class="album">
-        <div id="carouselIndicators" class="carousel slide">
+        <div id="carouselId" class="carousel slide">
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselIndicators"
+              data-bs-target="#carouselId"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -122,25 +121,25 @@
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselIndicators"
+              data-bs-target="#carouselId"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselIndicators"
+              data-bs-target="#carouselId"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselIndicators"
+              data-bs-target="#carouselId"
               data-bs-slide-to="3"
               aria-label="Slide 4"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselIndicators"
+              data-bs-target="#carouselId"
               data-bs-slide-to="4"
               aria-label="Slide 5"
             ></button>
@@ -185,7 +184,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselIndicators"
+            data-bs-target="#carouselId"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -194,7 +193,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselIndicators"
+            data-bs-target="#carouselId"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -203,36 +202,36 @@
         </div>
       </section>
       <!-- Fin du carousel -->
-      <!-- debut bouton GoUp -->
+      <!-- debut bouton GoTop -->
       <div class="btnGoTop">
         <img src="/assets/image/BtnGoUp.svg" class="btnGoTop_img" />
       </div>
-      <!-- Fin bouton GoUp -->
+      <!-- Fin bouton GoTop -->
     </main>
-    <!--<footer>
-      <div class="banner2">
-        <div class="socialink">
-          <h6>Réseaux sociaux :</h6>
+    <footer>
+      <div class="socialNetworks">
+        <h6>Réseaux sociaux :</h6>
+        <div class="socialNetworks-link">
           <a
-            class="icon"
+            class="social-icon"
             href="https://www.facebook.com/assojdrhdl"
             target="_blank"
           >
-            <img src="/assets/image/icon-facebook.svg" alt="icon facebook"
+            <img
+              src="/assets/image/icons/icon-facebook.svg"
+              alt="icon facebook"
           /></a>
           <a
-            class="icon"
+            class="social-icon"
             href="https://discord.com/invite/zXG6eHJ"
             target="_blank"
           >
-            <img src="/assets/image/icon-discord.svg" alt="icon discord"
+            <img src="/assets/image/icons/icon-discord.svg" alt="icon discord"
           /></a>
         </div>
-        <img class="img" src="/assets/image/banner.jpg" alt="" />
       </div>
-    </footer>-->
+    </footer>
     <script src="/script.js"></script>
-    <script src="/vendor/bootstrap.min.css"></script>
     <script src="/vendor/bootstrap.min.js"></script>
     <script src="/vendor/bootstrap.bundle.min.js"></script>
   </body>
