@@ -1,11 +1,8 @@
-@use '../utils/_fonts' as fonts
-@use '../utils/_colors' as colors
+@use "../utils/_utils" as utils
 
 .mainContainer
   height: 100vh
-  display: flex
-  align-items: center
-  justify-content: center
+  @include utils.flex()
 
 .container_signInForm
   background: rgba(141, 149, 166, 0.30)
@@ -17,43 +14,42 @@
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
   text-align: center
   img
-    width: 8rem
-    height: 8rem
+    width: 12rem
+    height: 12rem
     border-radius: 50%
     margin: 2.5rem 0 1rem 0
   h1
-    font-family: fonts.$baskerville
+    font-family: utils.$baskerville
     font-size: 2rem
     margin-bottom: 1rem
 
 .sigInForm_information
-  display: flex
-  justify-content: center
+  @include utils.flex()
   flex-direction: column
   .sigInForm_information_label
-    font-family: fonts.$merriweather
+    font-family: utils.$merriweather
     font-size: 1rem
-    text-align: start
-    margin: 0 3rem 0 3rem
+
   .sigInForm_information_input
-    margin: 0 3rem 1rem 3rem
+    width: 80%
     height: 2rem
+    margin-bottom: 1.5rem
 
 .aide
-  display: flex
-  align-items: center
-  justify-content: space-evenly
+  @include utils.flex()
   margin-bottom: 1.5rem
+  gap: 1rem
   .aide-item
-    font-size: 0.8rem
+    font-size: 0.7rem
     text-align: center
-    font-family: fonts.$merriweather
+    font-family: utils.$merriweather
     transform: scale(1)
     &:hover
       transform: scale(1.1)
-      color: colors.$color4
+      color: utils.$color4
 
 button
+  margin-bottom: 0.5rem
   padding: 0.5rem
   border: none
   border-radius: 20px
@@ -61,13 +57,13 @@ button
   text-decoration: none
   display: inline-block
   cursor: pointer
-  font-family: fonts.$caption
+  font-family: utils.$caption
   font-size: 1rem
   background-color: #5768ff
   &:hover
     transform: scale(1.1)
 .signUp:hover
-  color: colors.$color4
+  color: utils.$color4
 .inscription
   margin-bottom: 1.5rem
 

@@ -1,0 +1,100 @@
+@use "../utils/_utils" as utils
+
+.conv
+  @include utils.flex()
+  flex-direction: column
+  background: rgba(141, 149, 166, 0.30)
+  border-radius: 20px
+  border-left: 3px solid rgba(141, 149, 166, 0.30)
+  border-top: 3px solid rgba(141, 149, 166, 0.30)
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+
+.conv-tittle
+  text-decoration: underline
+  text-align: center
+  padding: 1rem 0 1.5rem 0
+  @extend %title-3
+  color: utils.$color4
+  text-shadow: 10px 10px 10px #000000
+
+.convHero
+  @include utils.flex()
+  flex-wrap: wrap
+.convHero_img
+  margin-bottom: 1.5rem
+.convHero_img-flyer
+  width: 18.75rem
+
+.convHero_text
+  width: 100%
+.convHero_text_paragraph
+  padding: 0 1.5rem
+  margin-bottom: 1.5rem
+  @extend %paragraphe
+  color: utils.$color4
+
+.convNav
+  @include utils.flex()
+  flex-wrap: wrap
+  gap: 0.5rem
+  margin-bottom: 1.5rem
+  .convNav-item
+    background-color: utils.$color1
+    color: utils.$color4
+    text-align: center
+    width: 9.5rem
+    height: 1.5rem
+    border-radius: 10px
+    &:hover
+      color: utils.$color1
+      background-color: utils.$color3
+
+.convGuest
+  @include utils.flex()
+  flex-direction: column
+
+.convGuest-item
+  @include utils.flex()
+  flex-direction: column
+  width: 20rem
+  margin-bottom: 1.5rem
+  background: rgba(141, 149, 166, 0.40)
+  border-radius: 1rem
+  border-left: 3px solid rgba(141, 149, 166, 0.30)
+  border-top: 3px solid rgba(141, 149, 166, 0.30)
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+
+.convGuest-item_img
+  margin: 1rem
+
+.convGuest-text_paragraph
+  margin: 1rem
+  color: utils.$color4
+  @extend %paragraphe
+
+//@media  screen and (min-width: 324px)
+
+@media  screen and (min-width: 481px)
+  .convHero_img-flyer
+    width: 25rem
+
+@media  screen and (min-width: 622px)
+  .convGuest-item
+    flex-direction: row
+    width: 35rem
+  .convHero_img-flyer
+    width: 35rem
+
+@media  screen and (min-width: 769px)
+  .convGuest-item
+    width: 45rem
+  .convHero_text
+    width: 70%
+
+@media  screen and (min-width: 1024px)
+  .convGuest-item
+    width: 55rem
+
+@media  screen and (min-width: 1201px)
+  .convGuest-item
+    width: 65rem

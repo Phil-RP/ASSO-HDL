@@ -13,94 +13,91 @@ ul {
   list-style: none;
 }
 
-.cover .coverTitle-1, .accueil .accueiltitle-1 {
+.cover .coverTitle-1, .accueil .accueiltitle {
   font-family: "Libre Baskerville", serif;
   font-size: 2.5rem;
 }
 
-.gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+.gameHelptitle-2, .ActuTitle, .about_title {
   font-family: "Merriweather", serif;
   font-size: 1.75rem;
 }
 
-.event-tittle {
+.conv-tittle, .event-tittle {
   font-family: "Merriweather", serif;
   font-size: 1.1rem;
 }
 
-.signIn-inscr_button, .nav a {
+.signIn-inscr_button, .nav a, .btnDetail {
   font-family: "Merriweather", serif;
   font-size: 0.8rem;
 }
 
-.eventHero_text_paragraph {
+.convHero_text_paragraph, .convGuest-text_paragraph, .eventHero_text_paragraph, .about_paragraph {
   font-family: "PT Serif Caption", serif;
   font-size: 0.8rem;
 }
 
 @media screen and (min-width: 324px) {
-  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+  .cover .coverTitle-1, .accueil .accueiltitle {
     font-size: 2.75rem;
   }
-  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+  .gameHelptitle-2, .ActuTitle, .about_title {
     font-size: 2rem;
   }
-  .event-tittle {
+  .conv-tittle, .event-tittle {
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 481px) {
-  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+  .cover .coverTitle-1, .accueil .accueiltitle {
     font-size: 3rem;
   }
-  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+  .gameHelptitle-2, .ActuTitle, .about_title {
     font-size: 2.25rem;
   }
-  .event-tittle {
+  .conv-tittle, .event-tittle {
     font-size: 1.5rem;
   }
-  .eventHero_text_paragraph {
+  .convHero_text_paragraph, .convGuest-text_paragraph, .eventHero_text_paragraph, .about_paragraph {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 622px) {
-  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+  .cover .coverTitle-1, .accueil .accueiltitle {
     font-size: 3.25rem;
   }
 }
 @media screen and (min-width: 769px) {
-  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+  .cover .coverTitle-1, .accueil .accueiltitle {
     font-size: 3.5rem;
   }
-  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+  .gameHelptitle-2, .ActuTitle, .about_title {
     font-size: 2.5rem;
   }
-  .event-tittle {
+  .conv-tittle, .event-tittle {
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+  .cover .coverTitle-1, .accueil .accueiltitle {
     font-size: 4.5rem;
   }
-  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+  .gameHelptitle-2, .ActuTitle, .about_title {
     font-size: 2.75rem;
   }
-  .event-tittle {
+  .conv-tittle, .event-tittle {
     font-size: 1.5rem;
-  }
-  .eventHero_text_paragraph {
-    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 1201px) {
-  .cover .coverTitle-1, .accueil .accueiltitle-1 {
+  .cover .coverTitle-1, .accueil .accueiltitle {
     font-size: 5.75rem;
   }
-  .gameHelptitle-2, .ActuTitle-2, .accueiltitle-2 {
+  .gameHelptitle-2, .ActuTitle, .about_title {
     font-size: 3rem;
   }
-  .event-tittle {
+  .conv-tittle, .event-tittle {
     font-size: 2rem;
   }
 }
@@ -113,52 +110,90 @@ body {
 }
 
 .flux {
-  background-color: rgba(240, 240, 240, 0);
   width: 100%;
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+.acceuilcontainer {
+  background: rgba(141, 149, 166, 0.6);
+  border-radius: 1rem;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+}
+
 .accueil {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-.accueil .accueiltitle-1 {
-  padding-top: 5.5rem;
+.accueil .accueiltitle {
+  padding-top: 5.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
   text-shadow: 10px 10px 10px #000000;
-  color: #f0f0f0;
+  color: #ddd9d9;
 }
 
-.accueiltitle-2 {
-  padding-left: 0.5rem;
-  margin-bottom: 1.5;
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about_title {
+  padding-left: 1rem;
+  margin-top: 1.5rem;
   text-align: start;
   text-decoration: underline;
-  color: #f0f0f0;
+  color: #ddd9d9;
+  text-shadow: 10px 10px 10px #000000;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: start;
+  text-decoration: underline;
+  color: #ddd9d9;
+  text-shadow: 10px 10px 10px #000000;
 }
 
-.accueil-paragraph {
+.about_paragraph {
+  color: #ddd9d9;
   margin-bottom: 1.5rem;
-  padding: 0 1rem;
+  padding: 1.5rem;
 }
 
 .album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 0 0.5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel {
+  width: 100%;
 }
 
 @media screen and (min-width: 324px) {
   .album {
     padding: 0 2rem;
   }
+  .paragraph {
+    padding: 0 3rem;
+  }
 }
 @media screen and (min-width: 481px) {
   .album {
+    padding: 0 4rem;
+  }
+  .paragraph {
     padding: 0 4rem;
   }
 }
@@ -166,10 +201,16 @@ body {
   .album {
     padding: 0 6rem;
   }
+  .paragraph {
+    padding: 0 5rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .album {
     padding: 0 8rem;
+  }
+  .paragraph {
+    padding: 0 6rem;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -180,8 +221,8 @@ body {
 .mainContainer {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .container_signInForm {
@@ -195,8 +236,8 @@ body {
   text-align: center;
 }
 .container_signInForm img {
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   margin: 2.5rem 0 1rem 0;
 }
@@ -209,37 +250,39 @@ body {
 .sigInForm_information {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .sigInForm_information .sigInForm_information_label {
   font-family: "Merriweather", serif;
   font-size: 1rem;
-  text-align: start;
-  margin: 0 3rem 0 3rem;
 }
 .sigInForm_information .sigInForm_information_input {
-  margin: 0 3rem 1rem 3rem;
+  width: 80%;
   height: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .aide {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   margin-bottom: 1.5rem;
+  gap: 1rem;
 }
 .aide .aide-item {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
   font-family: "Merriweather", serif;
   transform: scale(1);
 }
 .aide .aide-item:hover {
   transform: scale(1.1);
-  color: #f0f0f0;
+  color: #ddd9d9;
 }
 
 button {
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
   border: none;
   border-radius: 20px;
@@ -256,7 +299,7 @@ button:hover {
 }
 
 .signUp:hover {
-  color: #f0f0f0;
+  color: #ddd9d9;
 }
 
 .inscription {
@@ -303,10 +346,10 @@ button:hover {
   padding: 1rem;
 }
 
-.ActuTitle-2 {
+.ActuTitle {
   text-align: center;
   padding-bottom: 1.5rem;
-  color: #f0f0f0;
+  color: #ddd9d9;
   text-shadow: 10px 10px 10px #000000;
 }
 
@@ -326,7 +369,7 @@ button:hover {
   text-decoration: underline;
   text-align: center;
   padding: 1rem 0 1.5rem 0;
-  color: #f0f0f0;
+  color: #ddd9d9;
   text-shadow: 10px 10px 10px #000000;
 }
 
@@ -334,59 +377,148 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 19rem;
+  margin-bottom: 1.5rem;
+  background: rgba(141, 149, 166, 0.3);
+  border-radius: 20px;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
 }
 
 .eventHero_img {
-  margin-bottom: 1.5rem;
+  margin: 1rem;
 }
 
 .eventHero_img-flyer {
-  width: 18.75rem;
-}
-
-.eventHero_text {
   width: 100%;
 }
 
-.eventHero_text_paragraph {
-  padding: 0 1.5rem;
+.btnDetail {
   margin-bottom: 1.5rem;
-  color: #f0f0f0;
+  padding: 0.2rem;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #ddd9d9;
+  background-color: #5768ff;
+  transform: scale(1);
+}
+.btnDetail:hover {
+  transform: scale(1.1);
 }
 
-.eventNav {
+.eventHero_text {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.eventHero_text_paragraph {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ddd9d9;
+}
+
+@media screen and (min-width: 622px) {
+  .eventHero {
+    flex-wrap: wrap;
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .eventHero {
+    width: 46rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .eventHero {
+    width: 60rem;
+  }
+}
+.conv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(141, 149, 166, 0.3);
+  border-radius: 20px;
+  border-left: 3px solid rgba(141, 149, 166, 0.3);
+  border-top: 3px solid rgba(141, 149, 166, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+}
+
+.conv-tittle {
+  text-decoration: underline;
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+  color: #ddd9d9;
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.convHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.convHero_img {
+  margin-bottom: 1.5rem;
+}
+
+.convHero_img-flyer {
+  width: 18.75rem;
+}
+
+.convHero_text {
+  width: 100%;
+}
+
+.convHero_text_paragraph {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ddd9d9;
+}
+
+.convNav {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  justify-content: space-evenly;
   margin-bottom: 1.5rem;
 }
-.eventNav .eventNav-item {
+.convNav .convNav-item {
   background-color: #1D2240;
-  color: #f0f0f0;
+  color: #ddd9d9;
   text-align: center;
   width: 9.5rem;
   height: 1.5rem;
   border-radius: 10px;
 }
-.eventNav .eventNav-item:hover {
+.convNav .convNav-item:hover {
   color: #1D2240;
   background-color: #989eaa;
 }
 
-.eventGuest {
+.convGuest {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 
-.eventGuest-item {
+.convGuest-item {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 20rem;
   margin-bottom: 1.5rem;
   background: rgba(141, 149, 166, 0.4);
@@ -396,52 +528,44 @@ button:hover {
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
 }
 
-.eventGuest-item_img {
+.convGuest-item_img {
   margin: 1rem;
 }
 
+.convGuest-text_paragraph {
+  margin: 1rem;
+  color: #ddd9d9;
+}
+
 @media screen and (min-width: 481px) {
-  .eventHero_img-flyer {
+  .convHero_img-flyer {
     width: 25rem;
   }
 }
 @media screen and (min-width: 622px) {
-  .eventGuest-item {
-    display: flex;
+  .convGuest-item {
     flex-direction: row;
     width: 35rem;
   }
-  .eventHero_img-flyer {
+  .convHero_img-flyer {
     width: 35rem;
   }
 }
 @media screen and (min-width: 769px) {
-  .eventGuest-item {
-    display: flex;
-    flex-direction: row;
+  .convGuest-item {
     width: 45rem;
   }
-  .eventHero_img-flyer {
-    width: 45rem;
+  .convHero_text {
+    width: 70%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .eventGuest-item {
-    display: flex;
-    flex-direction: row;
-    width: 55rem;
-  }
-  .eventHero_img-flyer {
+  .convGuest-item {
     width: 55rem;
   }
 }
 @media screen and (min-width: 1201px) {
-  .eventGuest-item {
-    display: flex;
-    flex-direction: row;
-    width: 65rem;
-  }
-  .eventHero_img-flyer {
+  .convGuest-item {
     width: 65rem;
   }
 }
@@ -449,7 +573,7 @@ button:hover {
   padding-top: 4rem;
 }
 .cover .coverTitle-1 {
-  color: #f0f0f0;
+  color: #ddd9d9;
   text-align: center;
   font-weight: bold;
   padding: 2rem 0 1rem 0;
@@ -483,16 +607,20 @@ button:hover {
   }
 }
 .nav {
-  background-color: #6D758C;
+  background-color: #6b7288;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .nav a {
-  color: #f0f0f0;
+  color: #ddd9d9;
 }
 .nav a .nav-item {
   margin-left: 1rem;
+}
+
+.dropdown-menu {
+  background-color: #6b7288;
 }
 
 .socialNetworks {
@@ -515,7 +643,7 @@ button:hover {
 }
 
 .card {
-  background-color: #6D758C;
+  background-color: #6b7288;
 }
 
 a a:hover {
@@ -532,7 +660,7 @@ a a:hover {
   margin: 2rem 2rem 2rem 2rem;
   overflow: hidden;
   position: relative;
-  color: #f0f0f0;
+  color: #ddd9d9;
 }
 .postcard.card {
   background-color: #1D2240;
@@ -620,25 +748,25 @@ a a:hover {
   }
 }
 .blue .postcard__title:hover {
-  color: #6D758C;
+  color: #6b7288;
 }
 
 .blue .postcard__bar {
-  background-color: #6D758C;
+  background-color: #6b7288;
 }
 
 @media screen and (min-width: 769px) {
   .blue::before {
-    background-image: linear-gradient(-80deg, #6D758C, transparent 40%);
+    background-image: linear-gradient(-50deg, #6b7288, transparent 90%);
   }
   .blue:nth-child(2n)::before {
-    background-image: linear-gradient(80deg, #6D758C, transparent 40%);
+    background-image: linear-gradient(50deg, #6b7288, transparent 90%);
   }
 }
 .signIn-inscr__list {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   padding: 0;
