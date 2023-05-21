@@ -655,6 +655,11 @@ button:hover {
   margin-left: 1rem;
 }
 
+.sign {
+  display: flex;
+  flex-direction: row;
+}
+
 .wrapperFooter {
   display: flex;
   justify-content: space-evenly;
@@ -846,13 +851,6 @@ a a:hover {
 
 .title-5 {
   color: rgb(220, 222, 224);
-}
-
-.sign-List {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 
 .sign-button {
