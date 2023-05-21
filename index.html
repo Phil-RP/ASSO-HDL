@@ -17,12 +17,12 @@
   <body>
     <header class="header">
       <!-- Debut du Menu -->
-      <section class="nav fixed-top">
+      <section class="nav">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
               <img
-                src="assets/image/logo.jpg"
+                src="assets/image/icons/logo.jpg"
                 alt="Logo"
                 width="30px"
                 height="30px"
@@ -49,6 +49,14 @@
                   >
                 </li>
                 <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/pages-html/assoHdl.html"
+                    >L'association</a
+                  >
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="/pages-html/evenements.html"
                     >Evenements</a
                   >
@@ -68,14 +76,14 @@
           </div>
         </nav>
         <div>
-          <ul class="signIn-inscr__list">
+          <ul class="sign-List">
             <li>
-              <a href="/pages-html/signIn.html" class="signIn-inscr_button"
+              <a href="/pages-html/signIn.html" class="sign-button"
                 >Se connecter</a
               >
             </li>
             <li>
-              <a href="/pages-html/signUp.html" class="signIn-inscr_button"
+              <a href="/pages-html/signUp.html" class="sign-button"
                 >Inscription</a
               >
             </li>
@@ -83,13 +91,17 @@
         </div>
       </section>
       <!-- Fin du Menu-->
+      <!-- Debut du cover -->
+      <section class="cover">
+        <h1 class="title-1">Les Héraults de Lambert</h1>
+      </section>
+      <!-- fin cover-->
     </header>
     <!-- Debut acceuil -->
     <main class="accueil flux">
-      <h1 class="accueiltitle">Les Héraults de Lambert</h1>
       <div class="acceuilcontainer">
         <section class="about">
-          <h2 class="about_title">Qui somme nous ?</h2>
+          <h2 class="title-2 about_title">Qui somme nous ?</h2>
           <p class="about_paragraph">
             « Les Héraults de Lambert » est une association de jeu de rôle et de
             jeux de plateau créé en 1990 par un groupe de copains, en recherche
@@ -108,104 +120,12 @@
         </section>
         <!-- Fin acceuil -->
         <!-- Debut du carousel -->
-        <section class="album">
-          <div id="carouselId" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="/assets/image/exemple.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/image/exemple.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/image/exemple.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/image/exemple.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/image/exemple.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselId"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselId"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <section class="carousel">
+          <div class="carousel-inner">
+            <img id="carousel-image" src="" />
           </div>
+          <button class="carousel-button" id="prev-button">&#10094;</button>
+          <button class="carousel-button" id="next-button">&#10095;</button>
         </section>
       </div>
       <!-- Fin du carousel -->
@@ -215,31 +135,46 @@
       </div>
       <!-- Fin bouton GoTop -->
     </main>
-    <footer>
-      <div class="socialNetworks">
-        <h6>Réseaux sociaux :</h6>
-        <div class="socialNetworks-link">
-          <a
-            class="social-icon"
-            href="https://www.facebook.com/assojdrhdl"
-            target="_blank"
-          >
-            <img
-              src="/assets/image/icons/icon-facebook.svg"
-              alt="icon facebook"
-          /></a>
-          <a
-            class="social-icon"
-            href="https://discord.com/invite/zXG6eHJ"
-            target="_blank"
-          >
-            <img src="/assets/image/icons/icon-discord.svg" alt="icon discord"
-          /></a>
+    <footer class="wrapperFooter">
+      <div class="footerItem">
+        <img
+          class="footerItem_logo"
+          src="/assets/image/icons/logo2.png"
+          alt="logo Hdl"
+        />
+        <h5 class="socialTitle title-5">Les Heraults de Lambert</h5>
+      </div>
+      <div class="footerItem"></div>
+      <div class="footerItem"></div>
+      <div class="footerItem"></div>
+      <div class="footerItem">
+        <div class="socialNetworks">
+          <h5 class="socialTitle title-5">Réseaux sociaux :</h5>
+          <div class="socialNetworks-link">
+            <a
+              class="social-icon"
+              href="https://www.facebook.com/assojdrhdl"
+              target="_blank"
+            >
+              <img
+                src="/assets/image/icons/icon-facebook.svg"
+                alt="icon facebook"
+            /></a>
+            <a
+              class="social-icon"
+              href="https://discord.com/invite/zXG6eHJ"
+              target="_blank"
+            >
+              <img
+                src="/assets/image/icons/icon-discord.svg"
+                alt="icon discord"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="/script.js"></script>
     <script src="/vendor/bootstrap.min.js"></script>
     <script src="/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

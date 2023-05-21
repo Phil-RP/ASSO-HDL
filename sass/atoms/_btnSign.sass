@@ -1,0 +1,19 @@
+@use "../utils/_utils" as utils
+
+.sign-List
+  @include utils.flex(center, center, row)
+
+.sign-button
+  margin: 0.5rem
+  padding: 0.2rem
+  border: none
+  border-radius: 8px
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  cursor: pointer
+  @extend %title-nav
+  background-color: #5768ff
+  transform: scale(1)
+  &:hover
+    transform: scale(1.1)

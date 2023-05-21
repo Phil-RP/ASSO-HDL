@@ -1,24 +1,63 @@
 @use "../utils/_utils" as utils
 
-//.contact
-//  @include utils.flex()
-//  height: 100%
-//  width: 100%
-//  .map
-//    padding: 1.5rem
-//    margin-bottom: 1.5rem
-//    width: 100%
-//    height: 20rem
-//    background-size: cover
-//    background-position: center
-//    background-repeat: no-repeat
-//.social
-//  display: flex
-//  align-items: center
-//  justify-content: space-around
-//  height: 100%
-//  width: 100%
-//  .icon
-//    width: 5rem
-//    height: 5rem
-//    margin-bottom: 1rem
+.findTitle
+  margin-bottom: 0.75rem
+  text-decoration: underline
+  text-align: center
+
+.socialTitle
+  margin-bottom: 1rem
+  text-align: center
+
+.wrapper-contact
+  @extend %bgTransparent
+  @include utils.flex(center, center, column)
+  width: 100%
+
+.contact
+  @include utils.flex(space-evenly, center, column)
+  flex-wrap: wrap
+  width: 100%
+  margin-bottom: 1.5rem
+
+.contact-map
+  width: 75%
+  margin: 1rem
+
+.contact-info
+  @include utils.flex()
+  width: 100%
+
+.contact-social
+  @include utils.flex()
+
+.contact-info_adress, .contact-info_time, .contact-info_mail
+  @include utils.flex(center, center, row)
+  @extend %paragraphe
+  color: utils.$color4
+  margin-bottom: 0.75rem
+  width: 18rem
+
+.contact-info_adress__item, .contact-info_time__item, .contact-info_mail__item
+  margin-right: 0.5rem
+
+.contact-social_item > .icon
+  margin-left: 1rem
+
+//@media  screen and (min-width: 320px)
+//
+@media  screen and (min-width: 480px)
+  .contact, .contact-info
+    @include utils.flex(center, center, row)
+    flex-wrap: wrap
+//
+//@media  screen and (min-width: 620px)
+//
+//@media  screen and (min-width: 768px)
+//
+//@media  screen and (min-width: 1024px)
+//  .contact
+//    @include utils.flex(center, center, row)
+//
+//@media  screen and (min-width: 1200px)
+//

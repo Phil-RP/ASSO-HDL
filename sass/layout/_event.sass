@@ -1,39 +1,24 @@
 @use "../utils/_utils" as utils
 
-.ActuTitle
+.title-2
   text-align: center
   padding-bottom: 1.5rem
-  @extend %title-2
-  color: utils.$color4
-  text-shadow: 10px 10px 10px #000000
 
 .event
   @include utils.flex()
-  flex-direction: column
-  background: rgba(141, 149, 166, 0.30)
-  border-radius: 20px
-  border-left: 3px solid rgba(141, 149, 166, 0.30)
-  border-top: 3px solid rgba(141, 149, 166, 0.30)
-  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+  @extend %bgTransparent
 
 .event-tittle
   text-decoration: underline
   text-align: center
   padding: 1rem 0 1.5rem 0
-  @extend %title-3
-  color: utils.$color4
-  text-shadow: 10px 10px 10px #000000
 
 .eventHero
   @include utils.flex()
-  flex-direction: column
   width: 19rem
   margin-bottom: 1.5rem
-  background: rgba(141, 149, 166, 0.30)
-  border-radius: 20px
-  border-left: 3px solid rgba(141, 149, 166, 0.30)
-  border-top: 3px solid rgba(141, 149, 166, 0.30)
-  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.30)
+  @extend %bgTransparent
+
 .eventHero_img
   margin: 1rem
 .eventHero_img-flyer

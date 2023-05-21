@@ -1,28 +1,11 @@
 @use "../utils/_utils" as utils
+
 .cover
-  padding-top: 4rem
-  .coverTitle-1
-    @extend %title-1
-    color: utils.$color4
-    text-align: center
-    font-weight: bold
-    padding: 2rem 0 1rem 0
-    text-shadow: 10px 10px 10px #000000
-
-@media  screen and (min-width: 324px)
-  .cover
-    padding-top: 2.5rem
-    height: 12rem
-
-@media  screen and (min-width: 481px)
-  .cover
-    height: 13rem
-@media  screen and (min-width: 769px)
-  .cover
-    height: 14rem
-@media  screen and (min-width: 1024px)
-  .cover
-    height: 15rem
-@media  screen and (min-width: 1201px)
-  .cover
-    height: 16rem
+  @include utils.flex()
+  margin-bottom: 1.5rem
+  background-image: url(/assets/image/divers/banner.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  width: 100%
+  height: 27rem

@@ -23,7 +23,7 @@
             <a class="navbar-brand" href="/index.html">
               <img
                 src="/assets/image/logo.jpg"
-                alt="Logo"
+                alt="Logo HdL"
                 width="30px"
                 height="30px"
                 class="d-inline-block align-text-center"
@@ -49,6 +49,14 @@
                   >
                 </li>
                 <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/pages-html/assoHdl.html"
+                    >L'association</a
+                  >
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="/pages-html/evenements.html"
                     >Evenements</a
                   >
@@ -68,14 +76,14 @@
           </div>
         </nav>
         <div>
-          <ul class="signIn-inscr__list">
+          <ul class="sign-List">
             <li>
-              <a href="/pages-html/signIn.html" class="signIn-inscr_button"
+              <a href="/pages-html/signIn.html" class="sign-button"
                 >Se connecter</a
               >
             </li>
             <li>
-              <a href="/pages-html/signUp.html" class="signIn-inscr_button"
+              <a href="/pages-html/signUp.html" class="sign-button"
                 >Inscription</a
               >
             </li>
@@ -83,21 +91,20 @@
         </div>
       </section>
       <!-- Fin du Menu-->
-
       <!-- Debut du cover -->
       <section class="cover">
-        <h1 class="coverTitle-1">Les Héraults de Lambert</h1>
+        <h1 class="title-1">Les Héraults de Lambert</h1>
+        <h2 class="title-2">Contacts</h2>
       </section>
-      <!-- fin cover-->
+      <!-- fin cover -->
     </header>
     <main class="flux">
-      <h2 class="contacttitle">Contacts</h2>
-      <section class="contact">
-        <div class="map">
+      <section class="wrapper-contact">
+        <section class="contact-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2530.239556074151!2d3.0225167!3d50.641242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32aa068a97a39%3A0xfa37ebbd3213fd68!2sCentre%20Jules%20Maillot!5e0!3m2!1sfr!2sfr!4v1673616030500!5m2!1sfr!2sfr"
             width="100%"
-            height="300px"
+            height="350px"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -105,20 +112,51 @@
             title="carte d'accés Google Maps"
           >
           </iframe>
-        </div>
-        <div class="info">
-          <div class="adress">
-            <h3>Où nous trouver:</h3>
-            <p>
-              Centre Jules Maillot<br />
-              Rue champêtre<br />
-              59130 Lambersart<br />
-              E-mail: heraultsdelambert@gmail.com
-            </p>
+        </section>
+        <h3 class="title-3 findTitle">Où nous trouver:</h3>
+        <section class="contact">
+          <div class="contact-info">
+            <div class="contact-info_adress">
+              <img
+                class="contact-info_adress__item"
+                src="/assets/image/icons/adresse.png"
+                alt="icon adresse"
+              />
+              <p class="contact-info_adress__item">
+                Centre Jules Maillot<br />
+                Rue champêtre<br />
+                59130 Lambersart<br />
+              </p>
+            </div>
+            <div class="contact-info_time">
+              <img
+                class="contact-info_time__item"
+                src="/assets/image/icons/calendrier.png"
+                alt="icon calendrier"
+              />
+              <p class="contact-info_time__item">
+                Horaires :<br />
+                Vendredi de 18h30 à 22h<br />
+                Samedi de 14h à 22h<br />
+              </p>
+            </div>
+            <div class="contact-info_mail">
+              <img
+                class="contact-info_mail__item"
+                src="/assets/image/icons/e-mail.png"
+                alt="icon e-mail"
+              />
+              <a
+                class="contact-info_mail__item"
+                href="mailto:heraultsdelambert@gmail.com"
+              >
+                heraultsdelambert@gmail.com</a
+              >
+            </div>
           </div>
-          <div class="social">
-            <h4>Réseaux sociaux :</h4>
-            <div class="">
+          <div class="contact-social">
+            <h5 class="socialTitle title-5">Réseaux sociaux :</h5>
+            <div class="contact-social_item">
               <a
                 class="icon"
                 href="https://www.facebook.com/assojdrhdl"
@@ -128,8 +166,6 @@
                   src="/assets/image/icons/icon-facebook.svg"
                   alt="icon facebook"
               /></a>
-            </div>
-            <div class="">
               <a
                 class="icon"
                 href="https://discord.com/invite/zXG6eHJ"
@@ -141,8 +177,9 @@
               /></a>
             </div>
           </div>
-        </div>
+        </section>
       </section>
+
       <!-- debut bouton GoUp-->
       <div class="btnGoTop">
         <img src="/assets/image/icons/BtnGoUp.svg" class="btnGoTop_img" />
@@ -150,7 +187,27 @@
       <!-- Fin bouton GoUp-->
     </main>
     <footer>
-      <div class=""></div>
+      <div class="socialNetworks">
+        <h6>Réseaux sociaux :</h6>
+        <div class="socialNetworks-link">
+          <a
+            class="social-icon"
+            href="https://www.facebook.com/assojdrhdl"
+            target="_blank"
+          >
+            <img
+              src="/assets/image/icons/icon-facebook.svg"
+              alt="icon facebook"
+          /></a>
+          <a
+            class="social-icon"
+            href="https://discord.com/invite/zXG6eHJ"
+            target="_blank"
+          >
+            <img src="/assets/image/icons/icon-discord.svg" alt="icon discord"
+          /></a>
+        </div>
+      </div>
     </footer>
     <script src="/script.js"></script>
     <script src="/vendor/bootstrap.min.js"></script>
