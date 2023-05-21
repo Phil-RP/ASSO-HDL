@@ -3,14 +3,13 @@
 .acceuilcontainer
   @extend %bgTransparent
   @include utils.flex(space-evenly, center, column)
-  flex-wrap: wrap
-  height: 100vh
 .accueil
-  width: 100%
-  height: 100vh
+  @include utils.flex(space-evenly, center, column)
 
 .about
-  @include utils.flex()
+  @include utils.flex(space-evenly, center, column)
+  padding: 1rem
+
 .about_title
   margin-top: 1.5rem
   text-decoration: underline
@@ -29,7 +28,7 @@
 .carousel
   width: 30rem
   height: 30rem
-  margin: 2rem auto
+  margin: 1rem auto
   display: flex
   justify-content: center
   align-items: center
@@ -50,7 +49,7 @@
   border: 1px solid black
   border-radius: 15px
   padding: 0.5rem 0.5rem
-  margin: 1rem
+  margin: 0.5rem
   cursor: pointer
 
 #prev-button
